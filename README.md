@@ -1,0 +1,1 @@
+# Papildomos-inheritance-ir-interface-u-duotys
