@@ -10,7 +10,7 @@ public class LikeCounter implements Statistics {
     public int getStatisticsByName(List<Like> list, String name) {
         int sum = 0;
         for (Like like : list) {
-            if (like.getName().equals(name)) {
+            if (like.getName().equalsIgnoreCase(name)) {
                 sum++;
             }
         }
@@ -29,7 +29,7 @@ public class LikeCounter implements Statistics {
     }
 
     @Override
-    public int getDeveloperStatistics(List<Like> list, Position position) {
+    public int getDeveloperStatistics(List<Like> list) {
         int sum = 0;
         for (Like like : list) {
             if (like.getPosition().equals(Position.SENIOR_DEVELOPER) || like.getPosition().equals(Position.MID_DEVELOPER) || like.getPosition().equals(Position.JUNIOR_DEVELOPER)) {
