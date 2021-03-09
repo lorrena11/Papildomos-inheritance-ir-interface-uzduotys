@@ -1,3 +1,5 @@
+package model;
+
 public enum Position {
     JUNIOR_DEVELOPER("Junior developer"),
     MID_DEVELOPER("Mid developer"),
